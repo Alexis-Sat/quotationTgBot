@@ -1,0 +1,17 @@
+
+# Ignore environment configuration
+.env
+/config/config.php
+# Ignore IDE files
+.idea/
+*.iml
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore log files and database files
+*.log
+
+#Ignore images, video
+/images

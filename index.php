@@ -1,0 +1,15 @@
+<?php
+
+function autoload($class): void
+{
+    $file = str_replace('\\', '/', $class) . '.php';
+    if (file_exists($file)) {
+        require_once $file;
+    }
+}
+
+spl_autoload_register('autoload');
+
+use api\handlers\BotHandle;
+
+$bot = (new BotHandle())->handle();
